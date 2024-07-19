@@ -1,0 +1,4 @@
+window.isSafari=!1;if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)){window.isSafari=!0}
+window.isSafariVersion='';if(window.isSafari){var version=(navigator.appVersion).match(/Version\/(\d+)\.(\d+)\.?(\d+)? Safari/);if(version!==null){window.isSafariVersion=[parseInt(version[1],10),parseInt(version[2],10),parseInt(version[3]||0,10)]}}
+function t674_init(recid){var rec=document.getElementById('rec'+recid);if(!rec)return;var backgroundImage=rec.querySelector('.t674__img-holder');if(!backgroundImage)return;backgroundImage.onload=function(){var delay=0;var allRecords=document.getElementById('allrecords');if(allRecords.getAttribute('data-blocks-animationoff')!=='yes'){delay=600}
+setTimeout(function(){document.body.classList.add('t674__body_with-bg')},delay)};var event=document.createEvent('HTMLEvents');event.initEvent('load',!0,!1);backgroundImage.dispatchEvent(event)}
