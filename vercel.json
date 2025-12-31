@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.manishshrestha012.com.np/",
+      "permanent": true
+    }
+  ]
+}
